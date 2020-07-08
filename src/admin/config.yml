@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: codeforkansascity/kc-covid-response
+  repo: RobKraft/kc-covid-response
   branch: master
 
 media_folder: 'static/uploads'
