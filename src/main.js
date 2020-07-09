@@ -4,8 +4,6 @@
 require('typeface-montserrat')
 require('typeface-raleway')
 require('~/main.css')
-const cors = require('cors')({origin: true});
-const dialogflow = require('@google-cloud/dialogflow');
 
 import DefaultLayout from '~/layouts/Default.vue'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
