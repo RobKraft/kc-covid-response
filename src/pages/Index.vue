@@ -5,6 +5,7 @@
         Test. Track. <span class="text-comebackkc-darkblue">Triumph.</span>
       </template>
     </PageHeader>
+    
        <df-messenger intent="WELCOME"
                   chat-icon="/images/Robo-Icon.png"
                   chat-title="Dining-Out"
@@ -433,10 +434,3 @@ query {
   } 
 }
 </page-query>
-
-<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1" defer></script>
-    <df-messenger intent="WELCOME"
-                  chat-icon="/images/Robo-Icon.png"
-                  chat-title="Dining-Out"
-                  agent-id="a16ae295-e755-4f0e-9fc0-d111798c5ca6"
-                  language-code="en"></df-messenger>
