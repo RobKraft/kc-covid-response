@@ -16,7 +16,7 @@ Contact: Martha Gershun martha@mgconsulting.com / (913) 378-6654
 ### Comeback KC Offers Guidelines for a Safer 4th of July Weekend
 
 MONDAY, JUNE 29, 2020 - KANSAS CITY, MO. – As Kansas Citians throughout the metro area prepare to celebrate the 4th of July weekend, the community leaders at Comeback KC are offering common sense guidelines to prevent the spread COVID-19.
-
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1" defer></script>
 <center>
 
 ![Comeback KC Safe & Happy 4th of July](/uploads/july4-comebackkc.jpg "Comeback KC Safe & Happy 4th of July")

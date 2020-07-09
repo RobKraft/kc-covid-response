@@ -55,4 +55,3 @@ If everyone in the Kansas City region works together in this way, we can contain
 
 Comeback KC is a public/private partnership seeking to craft a unified strategy for how the entire Kansas City region can sustainably return from COVID-19. We are working across regional divisions to ensure that all of our populations come back in a better position than they were before this crisis. Our goal is to assist healthcare officials, public health departments, and public officials in their efforts to allocate resources effectively and efficiently in three areas: testing, contact tracing, and PPE. Together, we will become a model for regional cooperation and collective impact.
 
-<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1" defer></script>
