@@ -6,12 +6,7 @@
       </template>
     </PageHeader>
     
-       <df-messenger intent="WELCOME"
-                  chat-icon="/images/Robo-Icon.png"
-                  chat-title="Dining-Out"
-                  agent-id="a16ae295-e755-4f0e-9fc0-d111798c5ca6"
-                  language-code="en"></df-messenger>
- 
+
     <OneColumnSection>
       <div class="px-8 py-8 md:py-16 md:px-64">
         <p class="text-xl text-center">
