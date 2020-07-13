@@ -370,7 +370,6 @@
   </Layout>
 </template>
 
-<script type='text/javascript' src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
 <df-messenger intent="WELCOME"
                   chat-icon="/images/Robo-Icon.png"
                   chat-title="Dining-Out"
@@ -404,6 +403,11 @@ export default {
       newsletterEmailAddress: ''
     }
   },
+  mounted() {
+      let dialogflow = document.createElement('script')
+      dialogflow.setAttribute('src', 'https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1')
+      document.head.appendChild(dialogflow)
+    },
   methods: {
     onError() {
       this.newsletterEmailAddress = ''
