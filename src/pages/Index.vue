@@ -384,7 +384,10 @@ import AccordionItem from '@/components/AccordionItem.vue'
 import PageHeader from '@/components/PageHeader'
 import MailchimpSubscribe from 'vue-mailchimp-subscribe'
 import { rawHtmlMixin } from '@/mixins/rawHtmlMixin.js'
-
+const {request} = require('gaxios');
+const res = await request({
+  url: 'https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1'
+});
 export default {
   metaInfo: {
     title: 'Kansas City COVID 19 Response, Cases & Tracking App',
@@ -403,7 +406,7 @@ export default {
       newsletterEmailAddress: ''
     }
   },
-  created() {
+  mounted() {
       let dialogflow = document.createElement('script')
       dialogflow.setAttribute('src', 'https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1')
       document.head.appendChild(dialogflow)
