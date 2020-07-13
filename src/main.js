@@ -5,9 +5,9 @@ require('typeface-montserrat')
 require('typeface-raleway')
 require('~/main.css')
 const {request} = require('gaxios');
-const res = request({
-  url: 'https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1'
-});
+//const res = request({
+  //url: 'https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1'
+//});
 
 import DefaultLayout from '~/layouts/Default.vue'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
