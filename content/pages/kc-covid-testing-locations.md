@@ -10,3 +10,6 @@ This map shows locations where you may be able to get testing for COVID-19 in Ka
 <iframe height="600px" width="100%" style="border:none;" src="https://view-awesome-table.com/-M7IzhZjxvfs3UpYvW0Z/view"></iframe>
 
 **NOTE** - This information changes rapidly, and we are making a concerted effort to keep it up-to-date and complete. We cannot guarantee that this information is current, so you ***must*** call the testing site to verify details and discuss your situation before you visit. If you know of a testing location that isn't shown here, please use [this form](https://forms.gle/fTWftBj6Wen3G4yRA) to let us know about it.
+
+<script type='text/javascript' src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
