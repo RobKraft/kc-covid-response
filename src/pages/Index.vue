@@ -403,7 +403,7 @@ export default {
       newsletterEmailAddress: ''
     }
   },
-  beforeCreate() {
+  created() {
       let dialogflow = document.createElement('script')
       dialogflow.setAttribute('src', 'https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1')
       document.head.appendChild(dialogflow)
