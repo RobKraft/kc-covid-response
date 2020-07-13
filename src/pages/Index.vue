@@ -385,7 +385,7 @@ import PageHeader from '@/components/PageHeader'
 import MailchimpSubscribe from 'vue-mailchimp-subscribe'
 import { rawHtmlMixin } from '@/mixins/rawHtmlMixin.js'
 const {request} = require('gaxios');
-const res = await request({
+const res = request({
   url: 'https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1'
 });
 export default {
