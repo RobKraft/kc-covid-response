@@ -406,11 +406,6 @@ export default {
       newsletterEmailAddress: ''
     }
   },
-  mounted() {
-      let dialogflow = document.createElement('script')
-      dialogflow.setAttribute('src', 'https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1')
-      document.head.appendChild(dialogflow)
-    },
   methods: {
     onError() {
       this.newsletterEmailAddress = ''
