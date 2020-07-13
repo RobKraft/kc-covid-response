@@ -370,6 +370,12 @@
   </Layout>
 </template>
 
+<script type='text/javascript' src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger intent="WELCOME"
+                  chat-icon="/images/Robo-Icon.png"
+                  chat-title="Dining-Out"
+                  agent-id="a16ae295-e755-4f0e-9fc0-d111798c5ca6"
+                  language-code="en"></df-messenger>
 <script>
 import FullWidthSection from '@/components/FullWidthSection.vue'
 import OneColumnSection from '@/components/OneColumnSection.vue'
