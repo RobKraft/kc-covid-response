@@ -21,6 +21,7 @@
     "@gridsome/transformer-yaml": "^0.2.1",
     "cors": "^2.8.5",
     "dialogflow": "^1.2.0",
+    "gaxios": "^3.0.4",
     "gridsome": "^0.7.19",
     "gridsome-plugin-gtm": "^0.1.1",
     "gridsome-plugin-netlify-cms": "^1.0.9",
