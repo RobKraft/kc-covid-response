@@ -4,7 +4,7 @@
 require('typeface-montserrat')
 require('typeface-raleway')
 require('~/main.css')
-const {request} = require('gaxios');
+//const {request} = require('gaxios');
 //const res = request({
   //url: 'https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1'
 //});
