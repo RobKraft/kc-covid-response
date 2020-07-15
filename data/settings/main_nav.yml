@@ -10,6 +10,6 @@ nav_items:
   - label: Events
     path: /testing-events/
   - label: Downloads
-    path: /downloads/
+    path: /downloads-page/
   - label: FAQs
     path: /faqs/
