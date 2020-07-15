@@ -7,7 +7,7 @@
         Keep up to date on important information, COVID-19 updates, and news about testing and contact tracing throughout the KC metro area.
       </p>
     </OneColumnSection>
-    <div class="bg-comebackkc-light-gray">
+    <div class="bg-comebackkc-black">
       <OneColumnSection class="py-16 text-white md:py-24">
         <div class="px-4">
           <h2 class="mb-4 text-3xl">FAQs</h2>
