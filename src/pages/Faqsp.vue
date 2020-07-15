@@ -27,11 +27,12 @@
 import FullWidthSection from '@/components/FullWidthSection.vue'
 import OneColumnSection from '@/components/OneColumnSection.vue'
 import PageHeader from '@/components/PageHeader.vue'
+import AccordionItem from '@/components/AccordionItem.vue'
 import { rawHtmlMixin } from '@/mixins/rawHtmlMixin.js'
 
 export default {
   metaInfo: {
-    title: 'Kansas City COVID-19 Updates & News',
+    title: 'FAQs',
     meta: [
       {
         key: 'description',
