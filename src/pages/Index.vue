@@ -407,15 +407,3 @@ export default {
 //          </a>
 </script>
 
-<page-query>
-query {
-  faqs: allFaq(filter: { language: { eq: "en" }}, sortBy: "order", order: ASC) {
-    edges {
-      node {
-        question
-        content
-      }
-    }
-  } 
-}
-</page-query>

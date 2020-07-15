@@ -47,14 +47,14 @@ export default {
 
 <page-query>
 query {
-  updates: allUpdate(filter: { language: { eq: "en" }}, sortBy: "date", order: DESC) {
+  faqs: allFaq(filter: { language: { eq: "en" }}, sortBy: "order", order: ASC) {
     edges {
       node {
-        title
-        teaser
-        path
+        question
+        content
       }
     }
   } 
 }
 </page-query>
+
