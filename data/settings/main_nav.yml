@@ -9,3 +9,7 @@ nav_items:
     path: /kc-covid-testing-locations/
   - label: Events
     path: /testing-events/
+  - label: Downloads
+    path: /downloads/
+  - label: FAQs
+    path: /faqs/
