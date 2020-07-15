@@ -1,6 +1,6 @@
 <template>
   <Layout language="en">
-    <PageHeader >
+    <PageHeader image="/images/kc-skyline-bg.jpg">
       <template v-slot:title>
         Updates
       </template>

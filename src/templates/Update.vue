@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <PageHeader image="/images/kc-skyline-bg.jpg">
+    <PageHeader>
       <template v-slot:title>
         {{ $page.update.title }}
       </template>
