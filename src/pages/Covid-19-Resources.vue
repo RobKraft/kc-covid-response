@@ -1,7 +1,5 @@
 <template>
   <Layout language="en">
-    <PageHeader>
-    </PageHeader>
     <OneColumnSection class="px-4 mt-8 md:mt-16">
       <h2 class="text-4xl">Your Go-To Resource</h2>
       <p class="pb-8 italic md:bp-16 text-comebackkc-darkblue">Up-to-date plans and actionable COVID-19 content for the Metro, Kansas and Missouri.</p>
