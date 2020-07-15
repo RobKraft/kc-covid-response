@@ -1,8 +1,6 @@
 <template>
   <Layout>
-    <PageHeader>
-    </PageHeader>
-    <OneColumnSection class="px-4 my-8 md:my-16">
+     <OneColumnSection class="px-4 my-8 md:my-16">
       <div class="my-8 md:my-16">
         <h2 class="text-5xl" v-html="$page.basicPage.title"></h2>
       </div>
