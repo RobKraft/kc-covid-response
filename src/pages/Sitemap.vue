@@ -1,13 +1,5 @@
 <template>
   <Layout language="en">
-    <PageHeader>
-      <template v-slot:title>
-        Sitemap
-      </template>
-      <template v-slot:sub-title>
-        Test. Track. <span class="text-comebackkc-darkblue">Triumph.</span>
-      </template>
-    </PageHeader>
     <OneColumnSection class="px-4 mt-8 md:mt-16">
       <h2 class="mb-8 text-4xl md:mb-16">Sitemap</h2>
       <h3 class="text-3xl">Pages</h3>

@@ -1,14 +1,6 @@
 <template>
   <Layout language="es">
-    <PageHeader image="/images/kc-skyline-bg.jpg">
-      <template v-slot:title>
-        Regresa KC
-      </template>
-      <template v-slot:sub-title>
-        Prueba. Rastreo. <span class="text-comebackkc-darkblue">Victoria.</span>
-      </template>
-    </PageHeader>
-    <OneColumnSection>
+     <OneColumnSection>
       <div class="px-8 py-8 md:py-16 md:px-64">
         <p class="text-xl text-center">
           Kansas City nunca se rinde. Sin importar las situaciones, siempre encontramos una manera de unirnos y superarlas. Hoy no es diferente. Regresemos a nuestra KC de manera

@@ -1,12 +1,6 @@
 <template>
   <Layout language="en">
     <PageHeader>
-      <template v-slot:title>
-        Creative Assets
-      </template>
-      <template v-slot:sub-title>
-        Test. Track. <span class="text-comebackkc-darkblue">Triumph.</span>
-      </template>
     </PageHeader>
     <OneColumnSection class="px-4 my-8 md:my-16">
       <h2 class="pb-8 text-4xl md:bp-16">Join the Comeback</h2>

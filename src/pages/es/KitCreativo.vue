@@ -1,14 +1,6 @@
 <template>
   <Layout language="es">
-    <PageHeader>
-      <template v-slot:title>
-        Kit Creativo
-      </template>
-      <template v-slot:sub-title>
-        Prueba. Rastreo. <span class="text-comebackkc-darkblue">Victoria.</span>
-      </template>
-    </PageHeader>
-    <OneColumnSection class="px-4 my-8 md:my-16">
+     <OneColumnSection class="px-4 my-8 md:my-16">
       <h2 class="pb-8 text-4xl md:bp-16">Únete al Regreso</h2>
       <p>
         Regresar a Kansas City dependerá de todos nosotros. Por lo mismo, hemos puesto a disposición todos los recursos de nuestra campaña para descargarlos y compartirlos en sus

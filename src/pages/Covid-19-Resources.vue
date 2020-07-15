@@ -1,12 +1,6 @@
 <template>
   <Layout language="en">
     <PageHeader>
-      <template v-slot:title>
-        Resources
-      </template>
-      <template v-slot:sub-title>
-        Test. Track. <span class="text-comebackkc-darkblue">Triumph.</span>
-      </template>
     </PageHeader>
     <OneColumnSection class="px-4 mt-8 md:mt-16">
       <h2 class="text-4xl">Your Go-To Resource</h2>
