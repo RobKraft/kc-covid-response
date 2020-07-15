@@ -38,7 +38,7 @@
 
 <script>
 import FullWidthSection from '@/components/FullWidthSection.vue'
-import OneColumnSection from '@/components/OneColumnSection.vue'\
+import OneColumnSection from '@/components/OneColumnSection.vue'
 import TwoColumnSection from '@/components/TwoColumnSection.vue'
 import PageHeader from '@/components/PageHeader.vue'
 import { rawHtmlMixin } from '@/mixins/rawHtmlMixin.js'
