@@ -1,6 +1,6 @@
 <template>
   <Layout language="es">
-    <PageHeader image="/images/kc-skyline-bg.jpg">
+    <PageHeader>
       <template v-slot:title>
         Kit Creativo
       </template>
