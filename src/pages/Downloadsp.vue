@@ -38,13 +38,14 @@
 
 <script>
 import FullWidthSection from '@/components/FullWidthSection.vue'
-import OneColumnSection from '@/components/OneColumnSection.vue'
+import OneColumnSection from '@/components/OneColumnSection.vue'\
+import TwoColumnSection from '@/components/TwoColumnSection.vue'
 import PageHeader from '@/components/PageHeader.vue'
 import { rawHtmlMixin } from '@/mixins/rawHtmlMixin.js'
 
 export default {
   metaInfo: {
-    title: 'Kansas City COVID-19 Updates & News',
+    title: 'Downloads',
     meta: [
       {
         key: 'description',
@@ -54,20 +55,7 @@ export default {
     ]
   },
   mixins: [rawHtmlMixin],
-  components: { FullWidthSection, OneColumnSection, PageHeader }
+  components: { FullWidthSection, OneColumnSection, TwoColumnSection, PageHeader }
 }
 </script>
 
-<page-query>
-query {
-  updates: allUpdate(filter: { language: { eq: "en" }}, sortBy: "date", order: DESC) {
-    edges {
-      node {
-        title
-        teaser
-        path
-      }
-    }
-  } 
-}
-</page-query>
