@@ -1,12 +1,6 @@
 <template>
   <Layout>
     <PageHeader>
-      <template v-slot:title>
-        {{ $page.basicPage.title }}
-      </template>
-      <template v-slot:sub-title>
-        Test. Track. <span class="text-comebackkc-darkblue">Triumph.</span>
-      </template>
     </PageHeader>
     <OneColumnSection class="px-4 my-8 md:my-16">
       <div class="my-8 md:my-16">
