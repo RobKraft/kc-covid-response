@@ -7,18 +7,20 @@
         Keep up to date on important information, COVID-19 updates, and news about testing and contact tracing throughout the KC metro area.
       </p>
     </OneColumnSection>
-    <FullWidthSection v-for="(update, index) in $page.updates.edges" :key="update.title" class="py-8 md:py-16" :class="{ 'bg-comebackkc-light-gray': index % 2 !== 0 }">
-      <div class="container px-4 mx-auto">
-        <g-link :to="update.node.path"><h3 class="mb-4 text-3xl" v-html="update.node.title"></h3></g-link>
-        <div v-html="styleRawHTML(update.node.teaser)"></div>
-        <p class="mt-4 mb-8">
-          <g-link class="px-4 py-2 font-bold text-white rounded-md bg-comebackkc-red" :to="update.node.path">
-            View <font-awesome :icon="['fal', 'long-arrow-right']"></font-awesome>
-          </g-link>
-        </p>
-      </div>
-    </FullWidthSection>
-  </Layout>
+      <OneColumnSection class="py-16 text-white md:py-24">
+        <div class="px-4">
+          <h2 class="mb-4 text-3xl">FAQs</h2>
+          <div v-for="faq in $page.faqs.edges" :key="faq.question" class="mb-8">
+            <AccordionItem class="pb-8 border-b border-white" title-classes="font-bold text-2xl">
+              <template v-slot:title>{{ faq.node.question }}</template>
+              <template v-slot:body
+                ><span v-html="styleRawHTML(faq.node.content, 'white')"></span
+              ></template>
+            </AccordionItem>
+          </div>
+        </div>
+      </OneColumnSection>
+</Layout>
 </template>
 
 <script>

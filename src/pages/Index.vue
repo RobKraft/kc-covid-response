@@ -313,21 +313,6 @@
         </template>
       </TwoColumnSection>
     </div>
-    <div class="bg-comebackkc-black">
-      <OneColumnSection class="py-16 text-white md:py-24">
-        <div class="px-4">
-          <h2 class="mb-4 text-3xl">FAQs</h2>
-          <div v-for="faq in $page.faqs.edges" :key="faq.question" class="mb-8">
-            <AccordionItem class="pb-8 border-b border-white" title-classes="font-bold text-2xl">
-              <template v-slot:title>{{ faq.node.question }}</template>
-              <template v-slot:body
-                ><span v-html="styleRawHTML(faq.node.content, 'white')"></span
-              ></template>
-            </AccordionItem>
-          </div>
-        </div>
-      </OneColumnSection>
-    </div>
     <OneColumnSection>
       <div class="px-4 py-8 md:py-16">
         <h2 class="mb-4 text-3xl text-center">In Coordination With These Area Health Departments</h2>
