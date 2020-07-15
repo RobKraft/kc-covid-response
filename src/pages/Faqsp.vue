@@ -42,7 +42,7 @@ export default {
     ]
   },
   mixins: [rawHtmlMixin],
-  components: { FullWidthSection, OneColumnSection, PageHeader }
+  components: { FullWidthSection, OneColumnSection, PageHeader, AccordionItem }
 }
 </script>
 
