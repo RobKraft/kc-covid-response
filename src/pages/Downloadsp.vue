@@ -1,24 +1,39 @@
 <template>
   <Layout language="en">
-    <OneColumnSection class="px-4 mt-8 md:mt-16">
-      <h2 class="text-4xl">Downloads</h2>
-      <p class="pb-8 italic md:bp-16 text-comebackkc-darkblue">Reliable information, trustworthy sources.</p>
-      <p>
-        Keep up to date on important information, COVID-19 updates, and news about testing and contact tracing throughout the KC metro area.
-      </p>
+    <OneColumnSection class="pt-16 pb-4 md:pt-32 md:pb-8">
+      <h2 class="px-4 text-3xl lg:px-4">Fight COVID-19 With Your Phone</h2>
     </OneColumnSection>
-    <FullWidthSection v-for="(update, index) in $page.updates.edges" :key="update.title" class="py-8 md:py-16" :class="{ 'bg-comebackkc-light-gray': index % 2 !== 0 }">
-      <div class="container px-4 mx-auto">
-        <g-link :to="update.node.path"><h3 class="mb-4 text-3xl" v-html="update.node.title"></h3></g-link>
-        <div v-html="styleRawHTML(update.node.teaser)"></div>
-        <p class="mt-4 mb-8">
-          <g-link class="px-4 py-2 font-bold text-white rounded-md bg-comebackkc-red" :to="update.node.path">
-            View <font-awesome :icon="['fal', 'long-arrow-right']"></font-awesome>
-          </g-link>
-        </p>
-      </div>
-    </FullWidthSection>
-  </Layout>
+    <TwoColumnSection order="reversed">
+      <template v-slot:column1>
+        <div class="px-4 pb-16 md:pr-16">
+          <p>
+            Safe. Secure. Private. COVID Safe Paths, a free app, lets you see where you’ve been and alerts you if you've been exposed to COVID-19.
+          </p>
+          <ul class="mb-8 ml-5 list-disc">
+            <li>Find out if you’ve been exposed</li>
+            <li>Privately log your location</li>
+            <li>Completely control your data</li>
+          </ul>
+          <p>
+            <a id="play-store-download" href="https://play.google.com/store/apps/details?id=org.pathcheck.covidsafepaths&hl=en_US" target="_blank">
+              <img class="inline-block mb-4 mr-4" src="/images/google-play.png" alt="Google Play store button" />
+            </a>
+            <a id="app-store-download" href="https://apps.apple.com/us/app/covid-safe-paths/id1508266966" target="_blank">
+              <img class="inline-block mb-4" src="/images/app-store.png" alt="Apple store button" />
+            </a>
+          </p>
+          <p class="mb-16">
+            <a href="https://covidsafepaths.org/" target="_blank" class="underline text-comebackkc-darkblue">Learn more about the COVID Safe Paths app</a>
+          </p>
+        </div>
+      </template>
+      <template v-slot:column2>
+        <div class="flex flex-col items-center justify-end h-full px-4 pb-8 md:pb-0">
+          <g-image class="" src="~/images/safe-paths-app-screens.png" alt="Safe Paths app screenshot" />
+        </div>
+      </template>
+    </TwoColumnSection>
+      </Layout>
 </template>
 
 <script>
