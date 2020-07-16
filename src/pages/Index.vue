@@ -205,28 +205,17 @@
     </div>
     <OneColumnSection class="pt-16 pb-4 md:pt-32 md:pb-8">
       <h2 class="px-4 text-3xl">Health Inequities</h2>
+      <div class="px-4 md:pr-16"><p>
+      This map shows locations where you may be able to get testing for COVID-19 in Kansas City. Please click on the location pin on the map to see details about who can get a test and how to start the process. Each site has different criteria and processes.  This map doesn't include temporary, pop-up testing sites. To see those, check our [Testing Events page](https://www.comebackkc.com/testing-events/). 
+
+**IMPORTANT - call ahead to discuss your situation *BEFORE* going to get tested.** 
+
+<iframe height="600px" width="100%" style="border:none;" src="https://view-awesome-table.com/-M7IzhZjxvfs3UpYvW0Z/view"></iframe>
+
+**NOTE** - This information changes rapidly, and we are making a concerted effort to keep it up-to-date and complete. We cannot guarantee that this information is current, so you ***must*** call the testing site to verify details and discuss your situation before you visit. If you know of a testing location that isn't shown here, please use [this form](https://forms.gle/fTWftBj6Wen3G4yRA) to let us know about it.
+
+      </p></div>
     </OneColumnSection>
-    <TwoColumnSection class="pb-16 md:pb-32">
-      <template v-slot:column1>
-        <div class="px-4 md:pr-16">
-          <p>
-            The COVID-19 pandemic has not impacted all communities in our region equally. The Black, Latino/Hispanic and Native communities have shouldered an undue burden in these
-            challenging times. Comeback KC is committed to providing testing, tracking, and support resources to the communities that need them the most. As we reopen and rebuild
-            our economy, we can't just go back to normal, we have to take this opportunity to build a better, fairer Kansas City.
-          </p>
-        </div>
-      </template>
-      <template v-slot:column2>
-        <div class="px-4 md:px-16">
-          <ul class="mb-4 ml-5 list-disc">
-            <li>About 44% of KCMO's COVID-19 cases are Black, but the Black population makes up just 30% of the population</li>
-            <li>In Wyandotte County, Black people represent 53% of the COVID-19 deaths but just 23% of the population</li>
-            <li>Nationally, Black and Latino/Hispanic populations are dying at higher rates than their white neighbors</li>
-            <li>The Navajo Nation alone has experienced the 3rd highest infection rate outside of New York and New Jersey</li>
-          </ul>
-        </div>
-      </template>
-    </TwoColumnSection>
     <div class="bg-gradient-darkblue-red">
       <TwoColumnSection columnTwoColor="bg-comebackkc-red" columnTwoImage="/images/marc-map-bg.png">
         <template v-slot:column1>
