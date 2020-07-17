@@ -204,20 +204,16 @@
       </TwoColumnSection>
     </div>
     <OneColumnSection class="pt-16 pb-4 md:pt-32 md:pb-8">
-      <h2 class="px-4 text-3xl">KC COVID TESTING LOCATIONS</h2>
-      <div class="px-4 md:pr-16"><p>
-      This map shows locations where you may be able to get testing for COVID-19 in Kansas City. Please click on the location pin on the map to see details about who can get a test and how to start the process. Each site has different criteria and processes.  This map doesn't include temporary, pop-up testing sites. To see those, check our <a href="https://www.comebackkc.com/testing-events/">[Testing Events page].</a>
+      <h2 class="px-4 text-3xl">TESTING EVENTS</h2>
+ Several Kansas City area health departments and organizations are offering pop-up testing events at locations
+  throughout the city. Some require an appointment, so make sure you check the details. 
+  If you're looking for permanent COVID-19 testing sites, visit our
+   <a href="https://www.comebackkc.com/kc-covid-testing-locations/">testing locations</a> page.
 
-<div><b>IMPORTANT - call ahead to discuss your situation *BEFORE* going to get tested.</b></div>
+<div data-tockify-component="calendar" data-tockify-calendar="kccovidtestevents"></div>
 
-<iframe height="600px" width="100%" style="border:none;" src="https://view-awesome-table.com/-M7IzhZjxvfs3UpYvW0Z/view"></iframe>
-
-<b>NOTE</b> - This information changes rapidly, and we are making a concerted effort to keep it up-to-date
- and complete. We cannot guarantee that this information is current, so you <b>must</b> call the testing site to 
- verify details and discuss your situation before you visit. If you know of a testing location that isn't shown here,
-  please use <a href="https://forms.gle/fTWftBj6Wen3G4yRA">[this form]</a> to let us know about it.
-
-      </p></div>
+If you know of a testing event or pop-up location that isn't shown on our calendar, <a href="/contact/">let us know</a>.
+ 
     </OneColumnSection>
     <div class="bg-gradient-darkblue-red">
       <TwoColumnSection columnTwoColor="bg-comebackkc-red" columnTwoImage="/images/marc-map-bg.png">
