@@ -1,6 +1,6 @@
 <template>
   <Layout>
-     <OneColumnSection class="px-4 my-8 md:my-16">
+    <OneColumnSection class="px-4 my-8 md:my-16">
       <div class="my-8 md:my-16">
         <h2 class="text-5xl" v-html="$page.basicPage.title"></h2>
       </div>
@@ -12,7 +12,6 @@
 <script>
 import FullWidthSection from '@/components/FullWidthSection.vue'
 import OneColumnSection from '@/components/OneColumnSection.vue'
-import PageHeader from '@/components/PageHeader.vue'
 import { rawHtmlMixin } from '@/mixins/rawHtmlMixin.js'
 
 export default {
@@ -23,7 +22,7 @@ export default {
     }
   },
   mixins: [rawHtmlMixin],
-  components: { FullWidthSection, OneColumnSection, PageHeader }
+  components: { FullWidthSection, OneColumnSection }
 }
 </script>
 

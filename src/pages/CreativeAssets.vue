@@ -1,6 +1,6 @@
 <template>
   <Layout language="en">
-     <OneColumnSection class="px-4 my-8 md:my-16">
+    <OneColumnSection class="px-4 my-8 md:my-16">
       <h2 class="pb-8 text-4xl md:bp-16">Join the Comeback</h2>
       <p>
         Bringing Kansas City back the right way will take all of us. So, we’ve made all our campaign assets available free to download and share on your social channels and more.
@@ -38,7 +38,6 @@
 <script>
 import FullWidthSection from '@/components/FullWidthSection.vue'
 import OneColumnSection from '@/components/OneColumnSection.vue'
-import PageHeader from '@/components/PageHeader'
 
 export default {
   metaInfo: {
@@ -51,6 +50,6 @@ export default {
       }
     ]
   },
-  components: { FullWidthSection, OneColumnSection, PageHeader }
+  components: { FullWidthSection, OneColumnSection }
 }
 </script>

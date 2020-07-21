@@ -1,6 +1,14 @@
 <template>
   <Layout language="es">
-     <OneColumnSection>
+    <PageHeader image="/images/kc-skyline-bg.jpg">
+      <template v-slot:title>
+        Regresa KC
+      </template>
+      <template v-slot:sub-title>
+        Prueba. Rastreo. <span class="text-comebackkc-darkblue">Victoria.</span>
+      </template>
+    </PageHeader>
+    <OneColumnSection>
       <div class="px-8 py-8 md:py-16 md:px-64">
         <p class="text-xl text-center">
           Kansas City nunca se rinde. Sin importar las situaciones, siempre encontramos una manera de unirnos y superarlas. Hoy no es diferente. Regresemos a nuestra KC de manera
@@ -47,6 +55,8 @@
         </template>
       </ThreeColumnSection>
     </div>
+    
+    <!-- Comment
     <OneColumnSection class="pt-16 pb-4 md:pt-32 md:pb-8">
       <h2 class="px-4 text-3xl lg:px-4">Lucha contra el COVID-19 con tu teléfono</h2>
     </OneColumnSection>
@@ -81,6 +91,8 @@
         </div>
       </template>
     </TwoColumnSection>
+    -->
+
     <div class="bg-comebackkc-light-gray">
       <TwoColumnSection>
         <template v-slot:column1>
@@ -229,6 +241,8 @@
         </template>
       </TwoColumnSection>
     </div>
+
+    <!-- Comment
     <OneColumnSection class="pt-16 pb-4 md:pt-32 md:pb-8">
       <h2 class="px-4 text-3xl">Desigualdades en Salud</h2>
     </OneColumnSection>
@@ -254,6 +268,8 @@
         </div>
       </template>
     </TwoColumnSection>
+    -->
+
     <div class="bg-gradient-darkblue-red">
       <TwoColumnSection columnTwoColor="bg-comebackkc-red" columnTwoImage="/images/marc-map-bg.png">
         <template v-slot:column1>
@@ -300,29 +316,14 @@
             <h2 class="mb-4 text-3xl">Información de KC COVID-19</h2>
             <p class="text-xl leading-relaxed">
               Para obtener más información sobre el impacto de COVID-19 en la región de Kansas City, consulta
-              <a class="underline text-comebackkc-darkblue" href="http://marc-gis.maps.arcgis.com/apps/opsdashboard/index.html#/1c93961075454558b3bf0dfad014feae" target="_blank">
-                la sección de KC COVID en la página de MARC
+              <a class="underline text-comebackkc-darkblue" href="https://www.comebackkc.com/kc-metro-stats/" target="_blank">
+              nuestro tablero
               </a>
               .
             </p>
           </div>
         </template>
       </TwoColumnSection>
-    </div>
-    <div class="bg-comebackkc-black">
-      <OneColumnSection class="py-16 text-white md:py-24">
-        <div class="px-4">
-          <h2 class="mb-4 text-3xl">PP. FF.</h2>
-          <div v-for="faq in $page.faqs.edges" :key="faq.question" class="mb-8">
-            <AccordionItem class="pb-8 border-b border-white" title-classes="font-bold text-2xl">
-              <template v-slot:title>{{ faq.node.question }}</template>
-              <template v-slot:body
-                ><span v-html="styleRawHTML(faq.node.content, 'white')"></span
-              ></template>
-            </AccordionItem>
-          </div>
-        </div>
-      </OneColumnSection>
     </div>
     <OneColumnSection>
       <div class="px-4 py-8 md:py-16">
@@ -409,16 +410,3 @@ export default {
 //            <g-image src="~/images/clay-county-public-health-center-logo.jpg" width="200" alt="Clay County Public Health Center" />
 //          </a>
 </script>
-
-<page-query>
-query {
-  faqs: allFaq(filter: { language: { eq: "es" }}, sortBy: "order", order: ASC) {
-    edges {
-      node {
-        question
-        content
-      }
-    }
-  } 
-}
-</page-query>

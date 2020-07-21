@@ -1,6 +1,6 @@
 <template>
   <Layout language="es">
-     <OneColumnSection class="px-4 my-8 md:my-16">
+    <OneColumnSection class="px-4 my-8 md:my-16">
       <h2 class="pb-8 text-4xl md:bp-16">Únete al Regreso</h2>
       <p>
         Regresar a Kansas City dependerá de todos nosotros. Por lo mismo, hemos puesto a disposición todos los recursos de nuestra campaña para descargarlos y compartirlos en sus
@@ -38,7 +38,6 @@
 <script>
 import FullWidthSection from '@/components/FullWidthSection.vue'
 import OneColumnSection from '@/components/OneColumnSection.vue'
-import PageHeader from '@/components/PageHeader'
 
 export default {
   metaInfo: {
@@ -51,6 +50,6 @@ export default {
       }
     ]
   },
-  components: { FullWidthSection, OneColumnSection, PageHeader }
+  components: { FullWidthSection, OneColumnSection }
 }
 </script>

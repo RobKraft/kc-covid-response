@@ -5,8 +5,6 @@
         Test. Track. <span class="text-comebackkc-darkblue">Triumph.</span>
       </template>
     </PageHeader>
-    
-
     <OneColumnSection>
       <div class="px-8 py-8 md:py-16 md:px-64">
         <p class="text-xl text-center">
@@ -54,6 +52,53 @@
         </template>
       </ThreeColumnSection>
     </div>
+    <!-- Comment 
+    <OneColumnSection class="pt-16 pb-4 md:pt-32 md:pb-8">
+      <h2 class="px-4 text-3xl lg:px-4">Fight COVID-19 With Your Phone</h2>
+    </OneColumnSection>
+    <TwoColumnSection order="reversed">
+      <template v-slot:column1>
+        <div class="px-4 pb-16 md:pr-16">
+          <p>
+            Safe. Secure. Private. COVID Safe Paths, a free app, lets you see where you’ve been and alerts you if you've been exposed to COVID-19.
+          </p>
+          <ul class="mb-8 ml-5 list-disc">
+            <li>Find out if you’ve been exposed</li>
+            <li>Privately log your location</li>
+            <li>Completely control your data</li>
+          </ul>
+          <p>
+            <a id="play-store-download" href="https://play.google.com/store/apps/details?id=org.pathcheck.covidsafepaths&hl=en_US" target="_blank">
+              <img class="inline-block mb-4 mr-4" src="/images/google-play.png" alt="Google Play store button" />
+            </a>
+            <a id="app-store-download" href="https://apps.apple.com/us/app/covid-safe-paths/id1508266966" target="_blank">
+              <img class="inline-block mb-4" src="/images/app-store.png" alt="Apple store button" />
+            </a>
+          </p>
+          <p class="mb-16">
+            <a href="https://covidsafepaths.org/" target="_blank" class="underline text-comebackkc-darkblue">Learn more about the COVID Safe Paths app</a>
+          </p>
+        </div>
+      </template>
+      <template v-slot:column2>
+        <div class="flex flex-col items-center justify-end h-full px-4 pb-8 md:pb-0">
+          <g-image class="" src="~/images/safe-paths-app-screens.png" alt="Safe Paths app screenshot" />
+        </div>
+      </template>
+    </TwoColumnSection>
+    -->
+  
+  <OneColumnSection class="pt-16 pb-4 md:pt-32 md:pb-8">
+      <h2 class="px-4 text-3xl">Testing Events</h2>
+       <div class="px-4 pb-16 md:pr-16">
+      <p>Several Kansas City area health departments and organizations are offering pop-up testing events at locations
+      throughout the city. Some require an appointment, so make sure you check the details. 
+      If you're looking for permanent COVID-19 testing sites, visit our
+      <a href="https://www.comebackkc.com/kc-covid-testing-locations/">testing locations</a> page.</p>
+      <div data-tockify-component="calendar" data-tockify-calendar="kccovidtestevents"></div>
+      <p>If you know of a testing event or pop-up location that isn't shown on our calendar, <a href="/contact/">let us know</a>.
+      </p></div>
+   </OneColumnSection>
 
     <div class="bg-comebackkc-light-gray">
       <TwoColumnSection>
@@ -203,18 +248,7 @@
         </template>
       </TwoColumnSection>
     </div>
-    <OneColumnSection class="pt-16 pb-4 md:pt-32 md:pb-8">
-      <h2 class="px-4 text-3xl">TESTING EVENTS</h2>
- Several Kansas City area health departments and organizations are offering pop-up testing events at locations
-  throughout the city. Some require an appointment, so make sure you check the details. 
-  If you're looking for permanent COVID-19 testing sites, visit our
-   <a href="https://www.comebackkc.com/kc-covid-testing-locations/">testing locations</a> page.
-
-<div data-tockify-component="calendar" data-tockify-calendar="kccovidtestevents"></div>
-
-If you know of a testing event or pop-up location that isn't shown on our calendar, <a href="/contact/">let us know</a>.
  
-    </OneColumnSection>
     <div class="bg-gradient-darkblue-red">
       <TwoColumnSection columnTwoColor="bg-comebackkc-red" columnTwoImage="/images/marc-map-bg.png">
         <template v-slot:column1>
@@ -261,8 +295,8 @@ If you know of a testing event or pop-up location that isn't shown on our calend
             <h2 class="mb-4 text-3xl">KC COVID-19 Information</h2>
             <p class="text-xl leading-relaxed">
               For more information on the impact of COVID-19 in the Kansas City region, check out
-              <a class="underline text-comebackkc-darkblue" href="http://marc-gis.maps.arcgis.com/apps/opsdashboard/index.html#/1c93961075454558b3bf0dfad014feae" target="_blank"
-                >MARC's KC COVID dashboard</a
+              <a class="underline text-comebackkc-darkblue" href="https://www.comebackkc.com/kc-metro-stats/" target="_blank"
+                >our dashboard</a
               >.
             </p>
           </div>
@@ -311,11 +345,6 @@ If you know of a testing event or pop-up location that isn't shown on our calend
   </Layout>
 </template>
 
-<df-messenger intent="WELCOME"
-                  chat-icon="/images/Robo-Icon.png"
-                  chat-title="Dining-Out"
-                  agent-id="a16ae295-e755-4f0e-9fc0-d111798c5ca6"
-                  language-code="en"></df-messenger>
 <script>
 import FullWidthSection from '@/components/FullWidthSection.vue'
 import OneColumnSection from '@/components/OneColumnSection.vue'
@@ -362,4 +391,3 @@ export default {
 //            <g-image src="~/images/clay-county-public-health-center-logo.jpg" width="200" alt="Clay County Public Health Center" />
 //          </a>
 </script>
-
