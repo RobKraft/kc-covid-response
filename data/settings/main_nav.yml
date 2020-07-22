@@ -1,15 +1,52 @@
 nav_items:
+  - label: Donate
+    path: /donate/
+  - label: Data
+    subitems:
+      - label: KC Regional Dashboard
+        path: /kc-metro-stats/
+      - label: Regional Readiness
+        path: /kc-regional-readiness/
+      - label: Mask Wearing
+        path: /masks-in-kc/
+      - label: MARC dashboard link
+        path: http://marc-gis.maps.arcgis.com/apps/opsdashboard/index.html#/1c93961075454558b3bf0dfad014feae
+  - label: Testing
+    subitems:
+      - label: Testing 101
+        path: /kc-testing-101/
+      - label: Testing Locations
+        path: /kc-covid-testing-locations/
+      - label: Testing Events
+        path: /testing-events/
   - label: Updates
     path: /news-updates/
-  - label: Resources
-    path: /covid-19-resources/
-  - label: Creative
-    path: /creative-assets/
-  - label: Testing
-    path: /kc-covid-testing-locations/
-  - label: Events
-    path: /testing-events/
+    subitems:
+      - label: first
+        path: p1
+      - label: second
+        path: p2
+      - label: third
+        path: p3
   - label: Downloads
-    path: /downloadsp/
-  - label: FAQs
-    path: /faqsp/
+    subitems:
+      - label: Creative Kit
+        path: /creative-assets/
+      - label: Forms and Flyers
+        path: /forms-and-flyers/
+      - label: COVID SafePaths App
+        path: /safepaths-app/
+      - label: Area Plans
+        path: /covid-19-resources/
+  - label: About
+    subitems:
+      - label: What is Comeback KC
+        path: /p1/
+      - label: Our Regional Startegy
+        path: /regional-strategy/
+      - label: Public Health Advisors
+        path: /health-advisors/
+      - label: FAQs
+        path: /faq/
+      - label: Contact
+        path: /contact/

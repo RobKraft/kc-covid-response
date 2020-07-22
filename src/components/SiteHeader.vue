@@ -13,7 +13,14 @@
         <nav class="h-1/3">
           <ul class="inline-flex">
             <li v-for="(nav, index) in navItems()" :key="nav.path" :class="{ 'mr-4': index != navItems().length - 1 }">
-              <g-link class="font-semibold text-white underline uppercase" :to="nav.path">{{ nav.label }}</g-link>
+              <div class="dropdown">
+                <button class="font-semibold text-white underline uppercase dropbtn" >{{ nav.label }}</button>
+                <div class="dropdown-content">
+                <div v-for="(nav, index) in navSubItems(index)" :key="nav.path">
+                  <g-link :to="nav.path" class="font-semibold text-white underline uppercase">{{ nav.label }}</g-link>
+                 </div>
+                 </div>
+              </div>
             </li>
           </ul>
         </nav>
@@ -40,10 +47,13 @@
               <font-awesome class="mr-2" :icon="['fal', 'globe']"></font-awesome>{{ otherLanguageLabel }}
             </g-link>
           </li>
-          <li v-for="nav in navItems()" :key="nav.path" class="w-full py-8 text-center border-b border-m4m-gray">
+          <li v-for="(nav, index) in navItems()" :key="nav.path" class="w-full py-8 text-center border-b border-m4m-gray">
             <g-link class="font-semibold text-white underline uppercase" :to="nav.path">{{ nav.label }}</g-link>
-          </li>
-        </ul>
+               <div v-for="(nav, index) in navSubItems(index)" :key="nav.path">
+                  <g-link :to="nav.path" class="font-semibold text-white underline uppercase">{{ nav.label }}</g-link>
+                 </div>
+           </li>
+       </ul>
       </nav>
       <SiteFooter></SiteFooter>
     </div>
@@ -80,6 +90,9 @@ export default {
     },
     navItems() {
       return this.language == 'es' ? this.$static.es_nav_items.edges[0].node.nav_items : this.$static.en_nav_items.edges[0].node.nav_items
+    },
+    navSubItems(index) {
+      return this.language == 'es' ? this.$static.es_nav_items.edges[0].node.nav_items[index].subitems : this.$static.en_nav_items.edges[0].node.nav_items[index].subitems
     }
   },
   mounted() {
@@ -104,6 +117,10 @@ query {
        nav_items {
         label
         path
+        subitems {
+          label
+          path
+        }
       } 
       }
     }
@@ -114,6 +131,11 @@ query {
        nav_items {
         label
         path
+          subitems {
+            label
+            path
+        }
+
       } 
       }
     }
