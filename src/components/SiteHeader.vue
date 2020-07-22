@@ -17,7 +17,7 @@
                 <button class="font-semibold text-white underline uppercase dropbtn" >{{ nav.label }}</button>
                 <div class="dropdown-content">
                 <div v-for="(nav, index) in navSubItems(index)" :key="nav.path">
-                  <g-link :to="nav.path" class="font-semibold text-white underline uppercase">{{ nav.label }}</g-link>
+                  <g-link :to="nav.path" class="text-sm font-semibold text-white underline uppercase">{{ nav.label }}</g-link>
                  </div>
                  </div>
               </div>
@@ -50,7 +50,7 @@
           <li v-for="(nav, index) in navItems()" :key="nav.path" class="w-full py-8 text-center border-b border-m4m-gray">
             <g-link class="font-semibold text-white underline uppercase" :to="nav.path">{{ nav.label }}</g-link>
                <div v-for="(nav, index) in navSubItems(index)" :key="nav.path">
-                  <g-link :to="nav.path" class="font-semibold text-white underline uppercase">{{ nav.label }}</g-link>
+                  <g-link :to="nav.path" class="text-sm font-semibold text-white underline uppercase">{{ nav.label }}</g-link>
                  </div>
            </li>
        </ul>
