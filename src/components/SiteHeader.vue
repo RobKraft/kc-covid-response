@@ -14,12 +14,17 @@
           <ul class="inline-flex">
             <li v-for="(nav, index) in navItems()" :key="nav.path" :class="{ 'mr-4': index != navItems().length - 1 }">
               <div class="dropdown">
-                <button class="font-semibold text-white underline uppercase dropbtn" >{{ nav.label }}</button>
-                <div class="dropdown-content">
-                <div v-for="(nav, index) in navSubItems(index)" :key="nav.path">
-                  <g-link :to="nav.path" class="text-sm font-semibold text-white underline uppercase">{{ nav.label }}</g-link>
+                <template v-if="!!navSubItems(index).length">
+                  <button class="font-semibold text-white underline uppercase dropbtn" >{{ nav.label }}</button>
+                  <div class="dropdown-content">
+                  <div v-for="(nav, index) in navSubItems(index)" :key="nav.path">
+                    <g-link :to="nav.path" class="text-sm font-semibold text-white underline uppercase">{{ nav.label }}</g-link>
+                  </div>
                  </div>
-                 </div>
+                 </template>
+                 <template v-else>
+                  <g-link class="font-semibold text-white underline uppercase" :to="nav.path">{{ nav.label }}</g-link>
+                 </template>
               </div>
             </li>
           </ul>

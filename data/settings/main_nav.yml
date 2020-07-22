@@ -21,13 +21,6 @@ nav_items:
         path: /testing-events/
   - label: Updates
     path: /news-updates/
-    subitems:
-      - label: first
-        path: p1
-      - label: second
-        path: p2
-      - label: third
-        path: p3
   - label: Downloads
     subitems:
       - label: Creative Kit
