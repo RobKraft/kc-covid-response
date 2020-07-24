@@ -23,14 +23,15 @@ export default {
     }
   },
   mounted() {
-    /*alert('mounted');*/
+    console.log(this.$route);
     var z = window.localStorage;
-    var c = z.getItem('count');
-    if (c != 'yes')
-     /*if (typeof this.tableau == 'function')*/
-     {
-       z.setItem('count', 'yes');
+    var c = z.getItem('statsloaded');
+    if (c != 'yes') {
+       z.setItem('statsloaded', 'yes');
         window.location.reload();
+     }
+     else {
+      z.setItem('statsloaded', 'no');
      }
   },
  methods: {
