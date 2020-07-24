@@ -31,7 +31,7 @@ export default {
     }
   },
   mounted() {
-    this.dotableau()
+    this.tableau();
   },
   mixins: [rawHtmlMixin],
   components: { FullWidthSection, OneColumnSection }
