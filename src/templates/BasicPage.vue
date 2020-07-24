@@ -14,6 +14,10 @@ import FullWidthSection from '@/components/FullWidthSection.vue'
 import OneColumnSection from '@/components/OneColumnSection.vue'
 import { rawHtmlMixin } from '@/mixins/rawHtmlMixin.js'
 
+if (typeof tableau == 'function')
+{
+  tableau();
+}
 export default {
   metaInfo() {
     return {
