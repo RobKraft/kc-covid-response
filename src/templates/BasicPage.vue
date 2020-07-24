@@ -23,8 +23,8 @@ export default {
     }
   },
   mounted() {
-    alert('mounted');
-     if (typeof this.tableau == 'function')
+    /*alert('mounted');*/
+     /*if (typeof this.tableau == 'function')*/
      {
         this.tableau();
      }
