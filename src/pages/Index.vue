@@ -295,7 +295,7 @@
             <h2 class="mb-4 text-3xl">KC COVID-19 Information</h2>
             <p class="text-xl leading-relaxed">
               For more information on the impact of COVID-19 in the Kansas City region, check out
-              <a class="underline text-comebackkc-darkblue" href="https://www.comebackkc.com/kc-metro-stats/">our dashboard</a>.
+              <a class="underline text-comebackkc-darkblue" href="https://flamboyant-ritchie-2180b2.netlify.app/kc-metro-stats/">our dashboard</a>.
             </p>
           </div>
         </template>
