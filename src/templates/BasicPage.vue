@@ -7,12 +7,6 @@
       <div v-html="styleRawHTML($page.basicPage.content)"></div>
     </OneColumnSection>
   </Layout>
-  <script type='text/javascript'>
-  if (typeof tableau == 'function')
-  {
-      tableau();
-  }
-</script>
 </template>
 
 <script>
@@ -28,6 +22,12 @@ export default {
       meta: [{ key: 'description', name: 'description', content: this.$page.basicPage.metaDescription },{ key: 'og:title', name: 'og:title', content: this.$page.basicPage.title },{ key: 'og:description', name: 'og:description', content: this.$page.basicPage.ogDescription },{ key: 'og:image', name: 'og:image', content: 'https://comebackkc.com' + this.$page.basicPage.ogImage }]
     }
   },
+  mounted() {
+      if (typeof tableau == 'function')
+      {
+        tableau();
+      }
+    },
   mixins: [rawHtmlMixin],
   components: { FullWidthSection, OneColumnSection }
 }
