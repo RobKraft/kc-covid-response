@@ -23,7 +23,7 @@ export default {
     }
   },
   mounted() {
-    console.log(this.location.pathname);
+   if (window.location.pathname == '/kc-metro-stats/') {
     var z = window.localStorage;
     var c = z.getItem('statsloaded');
     if (c != 'yes') {
@@ -33,6 +33,7 @@ export default {
      else {
       z.setItem('statsloaded', 'no');
      }
+    }
   },
  methods: {
   },
