@@ -24,9 +24,9 @@ export default {
   },
   methods: {
     dotableau: function() {
-      if (typeof tableau == 'function')
+      if (typeof this.tableau == 'function')
       {
-        tableau();
+        this.tableau();
       }
     }
   },
