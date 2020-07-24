@@ -23,7 +23,7 @@ export default {
     }
   },
   mounted() {
-    console.log(this.$route);
+    console.log(this.location.pathname);
     var z = window.localStorage;
     var c = z.getItem('statsloaded');
     if (c != 'yes') {
