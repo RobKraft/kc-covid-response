@@ -23,7 +23,7 @@ export default {
     }
   },
   methods: {
-    dotableau function() {
+    dotableau: function() {
       if (typeof tableau == 'function')
       {
         tableau();
