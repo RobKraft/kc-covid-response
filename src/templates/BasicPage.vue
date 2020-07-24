@@ -25,7 +25,7 @@ export default {
   mounted() {
     /*alert('mounted');*/
     var z = window.localStorage;
-    var c = z.GetItem('count');
+    var c = z.getItem('count');
     if (c != 'yes')
      /*if (typeof this.tableau == 'function')*/
      {
