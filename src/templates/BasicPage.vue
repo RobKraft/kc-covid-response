@@ -7,6 +7,12 @@
       <div v-html="styleRawHTML($page.basicPage.content)"></div>
     </OneColumnSection>
   </Layout>
+  <script type='text/javascript'>
+  if (typeof tableau == 'function')
+  {
+      tableau();
+  }
+</script>
 </template>
 
 <script>
@@ -14,10 +20,7 @@ import FullWidthSection from '@/components/FullWidthSection.vue'
 import OneColumnSection from '@/components/OneColumnSection.vue'
 import { rawHtmlMixin } from '@/mixins/rawHtmlMixin.js'
 
-if (typeof tableau == 'function')
-{
-  tableau();
-}
+
 export default {
   metaInfo() {
     return {
