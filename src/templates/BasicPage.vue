@@ -22,14 +22,15 @@ export default {
       meta: [{ key: 'description', name: 'description', content: this.$page.basicPage.metaDescription },{ key: 'og:title', name: 'og:title', content: this.$page.basicPage.title },{ key: 'og:description', name: 'og:description', content: this.$page.basicPage.ogDescription },{ key: 'og:image', name: 'og:image', content: 'https://comebackkc.com' + this.$page.basicPage.ogImage }]
     }
   },
-  methods: {
-    mounted() {
+  mounted() {
      if (typeof this.tableau == 'function')
      {
         this.tableau();
      }
   },
-  mixins: [rawHtmlMixin],
+ methods: {
+  },
+   mixins: [rawHtmlMixin],
   components: { FullWidthSection, OneColumnSection }
 }
 </script>
