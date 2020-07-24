@@ -26,7 +26,7 @@ export default {
     /*alert('mounted');*/
      /*if (typeof this.tableau == 'function')*/
      {
-        this.tableau();
+        this.$el.tableau();
      }
   },
  methods: {
