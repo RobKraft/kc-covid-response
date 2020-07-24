@@ -24,9 +24,13 @@ export default {
   },
   mounted() {
     /*alert('mounted');*/
+    var z = window.localStorage;
+    var c = z.GetItem('count');
+    if (c != 'yes')
      /*if (typeof this.tableau == 'function')*/
      {
-        this.$el.tableau();
+       z.setItem('count', 'yes');
+        window.location.reload();
      }
   },
  methods: {
