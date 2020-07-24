@@ -23,15 +23,11 @@ export default {
     }
   },
   methods: {
-    dotableau: function() {
-      if (typeof this.tableau == 'function')
-      {
+    mounted() {
+     if (typeof this.tableau == 'function')
+     {
         this.tableau();
-      }
-    }
-  },
-  mounted() {
-    this.tableau();
+     }
   },
   mixins: [rawHtmlMixin],
   components: { FullWidthSection, OneColumnSection }
