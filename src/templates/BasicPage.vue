@@ -22,12 +22,17 @@ export default {
       meta: [{ key: 'description', name: 'description', content: this.$page.basicPage.metaDescription },{ key: 'og:title', name: 'og:title', content: this.$page.basicPage.title },{ key: 'og:description', name: 'og:description', content: this.$page.basicPage.ogDescription },{ key: 'og:image', name: 'og:image', content: 'https://comebackkc.com' + this.$page.basicPage.ogImage }]
     }
   },
-  created() {
+  methods: {
+    dotableau function() {
       if (typeof tableau == 'function')
       {
         tableau();
       }
-    },
+    }
+  },
+  mounted() {
+    this.dotableau()
+  },
   mixins: [rawHtmlMixin],
   components: { FullWidthSection, OneColumnSection }
 }
