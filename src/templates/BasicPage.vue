@@ -23,15 +23,16 @@ export default {
     }
   },
   mounted() {
-   if (window.location.pathname == '/kc-metro-stats/') {
+   console.log("mounted: " + window.location.pathname);
+   if (window.location.pathname == '/kc-metro-stats/' || window.location.pathname == '/masks-in-kc/') {
     var z = window.localStorage;
-    var c = z.getItem('statsloaded');
+    var c = z.getItem(window.location.pathname);
     if (c != 'yes') {
-       z.setItem('statsloaded', 'yes');
+       z.setItem(window.location.pathname, 'yes');
         window.location.reload();
      }
      else {
-      z.setItem('statsloaded', 'no');
+      z.setItem(window.location.pathname, 'no');
      }
     }
   },
