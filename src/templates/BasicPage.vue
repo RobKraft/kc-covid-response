@@ -29,11 +29,9 @@ export default {
     }
   },
    mounted() {
-     console.log("mounted basic: " + window.location.pathname);
     evalScripts()
   },
   updated() {
-    console.log("updated basic: " + window.location.pathname);
     evalScripts()
   },
  methods: {
