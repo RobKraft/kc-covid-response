@@ -14,6 +14,12 @@ import FullWidthSection from '@/components/FullWidthSection.vue'
 import OneColumnSection from '@/components/OneColumnSection.vue'
 import { rawHtmlMixin } from '@/mixins/rawHtmlMixin.js'
 
+function evalScripts() {
+  const scripts = document.getElementsByClassName('evalme')
+  scripts.forEach((script) => {
+    eval(script.innerHTML)
+  })
+}
 
 export default {
   metaInfo() {
@@ -22,19 +28,13 @@ export default {
       meta: [{ key: 'description', name: 'description', content: this.$page.basicPage.metaDescription },{ key: 'og:title', name: 'og:title', content: this.$page.basicPage.title },{ key: 'og:description', name: 'og:description', content: this.$page.basicPage.ogDescription },{ key: 'og:image', name: 'og:image', content: 'https://comebackkc.com' + this.$page.basicPage.ogImage }]
     }
   },
-  mounted() {
-   console.log("mounted: " + window.location.pathname);
-   if (window.location.pathname == '/kc-metro-stats/' || window.location.pathname == '/masks-in-kc/') {
-    var z = window.localStorage;
-    var c = z.getItem(window.location.pathname);
-    if (c != 'yes') {
-       z.setItem(window.location.pathname, 'yes');
-        window.location.reload();
-     }
-     else {
-      z.setItem(window.location.pathname, 'no');
-     }
-    }
+   mounted() {
+     console.log("mounted basic: " + window.location.pathname);
+    evalScripts()
+  },
+  updated() {
+    console.log("updated basic: " + window.location.pathname);
+    evalScripts()
   },
  methods: {
   },
