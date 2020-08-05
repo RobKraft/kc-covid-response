@@ -1,6 +1,4 @@
 nav_items:
-  - label: Donate
-    path: /donate/
   - label: Data
     path: data
     subitems:
@@ -15,8 +13,6 @@ nav_items:
   - label: Testing
     path: testing
     subitems:
-      - label: Testing 101
-        path: /kc-testing-101/
       - label: Testing Locations
         path: /kc-covid-testing-locations/
       - label: Testing Events
@@ -28,22 +24,13 @@ nav_items:
     subitems:
       - label: Creative Kit
         path: /creative-assets/
-      - label: Forms and Flyers
-        path: /forms-and-flyers/
-      - label: COVID SafePaths App
-        path: /safepaths-app/
       - label: Area Plans
         path: /covid-19-resources/
   - label: About
     path: about
     subitems:
-      - label: What is Comeback KC
-        path: /p1/
-      - label: Our Regional Startegy
-        path: /regional-strategy/
-      - label: Public Health Advisors
-        path: /health-advisors/
       - label: FAQs
         path: /faq/
       - label: Contact
         path: /contact/
+    
