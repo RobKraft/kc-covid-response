@@ -15,28 +15,32 @@ import OneColumnSection from '@/components/OneColumnSection.vue'
 import { rawHtmlMixin } from '@/mixins/rawHtmlMixin.js'
 
 function evalScripts() {
-  const scripts = document.getElementsByClassName('evalme')
+  const scripts = document.querySelectorAll("script")
   scripts.forEach((script) => {
-    eval(script.innerHTML)
+    if (script.childNodes.length > 0)
+    {
+      if (script.childNodes[0].nodeValue.includes("vizElement"))
+      eval(script.innerHTML)
+    }
   })
 }
 
 export default {
+   mounted() {
+     console.log("mounted basic: " + window.location.pathname);
+    evalScripts()
+  },
+  updated() {
+    console.log("updated basic: " + window.location.pathname);
+    evalScripts()
+  },
   metaInfo() {
     return {
       title: this.$page.basicPage.title,
       meta: [{ key: 'description', name: 'description', content: this.$page.basicPage.metaDescription },{ key: 'og:title', name: 'og:title', content: this.$page.basicPage.title },{ key: 'og:description', name: 'og:description', content: this.$page.basicPage.ogDescription },{ key: 'og:image', name: 'og:image', content: 'https://comebackkc.com' + this.$page.basicPage.ogImage }]
     }
   },
-   mounted() {
-    evalScripts()
-  },
-  updated() {
-    evalScripts()
-  },
- methods: {
-  },
-   mixins: [rawHtmlMixin],
+  mixins: [rawHtmlMixin],
   components: { FullWidthSection, OneColumnSection }
 }
 </script>
