@@ -18,12 +18,12 @@
                   <button class="font-semibold text-white uppercase dropbtn" >{{ nav.label }}</button>
                   <div class="dropdown-content">
                   <div v-for="(nav, index) in navSubItems(index)" :key="nav.path">
-                    <g-link :to="nav.path" class="text-sm font-semibold text-white uppercase">{{ nav.label }}</g-link>
+                    <g-link :to="nav.path" class="text-sm font-semibold text-red uppercase">{{ nav.label }}</g-link>
                   </div>
                  </div>
                  </template>
                  <template v-else>
-                  <g-link class="font-semibold text-white uppercase" :to="nav.path">{{ nav.label }}</g-link>
+                  <g-link class="font-semibold text-white uppercase dropbtn" :to="nav.path">{{ nav.label }}</g-link>
                  </template>
               </div>
             </li>
@@ -53,11 +53,15 @@
             </g-link>
           </li>
           <li v-for="(nav, index) in navItems()" :key="nav.path" class="w-full py-2 text-center ">
-            <g-link class="font-semibold text-white uppercase" :to="nav.path">{{ nav.label }}</g-link>
+            <g-link class="font-semibold text-white uppercase robkraft" :to="nav.path">{{ nav.label }}</g-link>
+               
                <div v-for="(nav, index) in navSubItems(index)" :key="nav.path">
-                  <g-link :to="nav.path" class="text-sm font-semibold text-white uppercase">{{ nav.label }}</g-link>
+
+                  <g-link :to="nav.path" class="text-sm font-semibold text-white uppercase robkraft">{{ nav.label }}</g-link>
+
                  </div>
            </li>
+           
        </ul>
       </nav>
       <SiteFooter></SiteFooter>
