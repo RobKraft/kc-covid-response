@@ -2,7 +2,7 @@
   <div class="flex items-center h-full">
   <df-messenger intent="WELCOME"
                   chat-icon="/images/Robo-Icon.png"
-                  chat-title="Dining-Out"
+                  chat-title="Come Back KC"
                   agent-id="a16ae295-e755-4f0e-9fc0-d111798c5ca6"
                   expand="false"
                   wait-open="true"
