@@ -4,6 +4,8 @@
                   chat-icon="/images/Robo-Icon.png"
                   chat-title="Dining-Out"
                   agent-id="a16ae295-e755-4f0e-9fc0-d111798c5ca6"
+                  expand="false"
+                  wait-open="true"
                   language-code="en"></df-messenger>
     <div class="container items-center justify-between hidden h-full px-4 mx-auto md:flex">
       <div class="flex items-center justify-start w-1/2">
@@ -121,7 +123,8 @@ export default {
     let dialogScript = document.createElement('script')
     dialogScript.setAttribute('src', 'https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1')
     document.head.appendChild(dialogScript)
-
+    const dfMessenger = document.querySelector('df-messenger');
+    dfMessenger.showMinChat();
     this.open = this.isOpen
   }
 }
