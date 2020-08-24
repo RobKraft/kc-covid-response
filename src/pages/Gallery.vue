@@ -1,8 +1,8 @@
 <template>
   <Layout language="en">
-    <ThreeColumnSection class="px-4 mt-8 md:mt-16">
+    <OneColumnSection class="px-4 mt-8 md:mt-16">
       <h2 class="text-4xl">Download Gallery</h2>
-      <div style="display:inline-block" v-for="gallery in $page.gallerys.edges" :key="gallery.itemname" class="mb-8">
+      <div style="display:inline-block" v-for="gallery in $page.gallerys.edges" :key="gallery.itemname" class="px-12 mb-8">
             <GalleryItem title-classes="font-bold text-2xl">
               <template v-slot:itemname><p>{{ gallery.node.itemname }}</p></template>
               
@@ -21,7 +21,7 @@
                
             </GalleryItem>
       </div>
-    </ThreeColumnSection>
+    </OneColumnSection>
   </Layout>
 </template>
 
