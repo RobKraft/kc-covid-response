@@ -121,6 +121,20 @@ collections:
       - { label: 'Question', name: 'question', widget: 'string' }
       - { label: 'Answer', name: 'body', widget: 'markdown' }
     sortableFields: ['order', 'question']
+  - name: 'gallery'
+    label: 'Gallery'
+    summary: '{{order}} - {{itemname}}'
+    folder: 'content/gallery'
+    create: true
+    identifier_field: 'itemname'
+    fields:
+      - { label: 'Language', name: 'language', widget: 'hidden', default: 'en' }
+      - { label: 'Order', name: 'order', widget: 'number', valueType: 'int' }
+      - { label: 'Itemname', name: 'itemname', widget: 'string' }
+      - { label: 'thumbnail', name: 'thumbnail', widget: 'string' }
+      - { label: 'itemtypes', name: 'itemtypes', widget: 'string' }
+      - { label: 'filename', name: 'filename', widget: 'string' }
+    sortableFields: ['order', 'itemname']
   - name: settings
     label: Settings
     files:
