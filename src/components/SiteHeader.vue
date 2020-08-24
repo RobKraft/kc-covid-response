@@ -120,12 +120,12 @@ export default {
     tockifyScript.setAttribute('data-tockify-script', 'embed')
     document.head.appendChild(tockifyScript)
 
-    let dialogScript = document.createElement('script')
-    dialogScript.setAttribute('src', 'https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1')
-    document.head.appendChild(dialogScript)
-    const dfMessenger = document.querySelector('df-messenger');
-    dfMessenger.showMinChat();
-    this.open = this.isOpen
+    //let dialogScript = document.createElement('script')
+    //dialogScript.setAttribute('src', 'https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1')
+    //document.head.appendChild(dialogScript)
+    //const dfMessenger = document.querySelector('df-messenger');
+    //dfMessenger.showMinChat();
+    //this.open = this.isOpen
   }
 }
 </script>
