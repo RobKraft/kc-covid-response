@@ -11,9 +11,9 @@
               
               <img :src="gallery.node.thumbnail" width="100" height="120"/>
               <div style="flex:1">
-              <p>{{ gallery.node.itemtypes }}</p>
+              <p class="px-4">{{ gallery.node.itemtypes }}</p>
              
-              <div style="flex:1">
+              <div class="px-4" style="flex:1">
               <a class="px-2 py-1 font-bold text-white rounded-md bg-comebackkc-red" :href="gallery.node.filename">Download</a>
                </div></div>
                </div> 
