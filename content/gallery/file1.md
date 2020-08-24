@@ -1,8 +1,8 @@
 ---
 order: 1
-itemname: Who is C19KC?
+itemname: Person Picture
 language: en
-thumbnail: uploads/ecorriveau_re.jpg
+thumbnail: /uploads/ecorriveau_re.jpg
 itemtypes: flyer
-filename: uploads/ecorriveau_re.jpg
+filename: /uploads/ecorriveau_re.jpg
 ---
