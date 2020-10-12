@@ -1,17 +1,16 @@
 nav_items:
-  - label: Donate
-    path: donate
+
   - label: Data
     path: data
     subitems:
-      - label: KC Regional Dashboard
-        path: /kc-metro-stats/
+      - label: KC Region COVID Dashboard
+        path: /kc-region-covid-dashboard/
       - label: Regional Readiness
         path: /kc-regional-readiness/
       - label: Mask Wearing
         path: /masks-in-kc/
       - label: MARC dashboard
-        path: http://marc-gis.maps.arcgis.com/apps/opsdashboard/index.html#/1c93961075454558b3bf0dfad014feae
+        path: https://marc2.org/covidhub/
   - label: Testing
     path: testing
     subitems:
@@ -24,6 +23,8 @@ nav_items:
   - label: Downloads
     path: downloads
     subitems:
+      - label: Media Library
+        path: /gallery/
       - label: Creative Kit
         path: /creative-assets/
       - label: Area Plans
@@ -31,6 +32,8 @@ nav_items:
   - label: About
     path: about
     subitems:
+      - label: Donate
+        path: donate
       - label: FAQs
         path: /faq/
       - label: Contact

@@ -1,12 +1,5 @@
 <template>
   <div class="flex items-center h-full">
-  <df-messenger intent="WELCOME"
-                  chat-icon="/images/Robo-Icon.png"
-                  chat-title="Come Back KC"
-                  agent-id="a16ae295-e755-4f0e-9fc0-d111798c5ca6"
-                  expand="false"
-                  wait-open="true"
-                  language-code="en"></df-messenger>
     <div class="container items-center justify-between hidden h-full px-4 mx-auto md:flex">
       <div class="flex items-center justify-start w-1/2">
         <g-link :to="homePageUrl"><img class="h-32" src="/images/site-logo.png" alt="Comeback KC logo"/></g-link>
@@ -25,7 +18,7 @@
                   <button class="font-semibold text-white uppercase dropbtn" >{{ nav.label }}</button>
                   <div class="dropdown-content">
                   <div v-for="(nav, index) in navSubItems(index)" :key="nav.path">
-                    <g-link :to="nav.path" class="text-sm font-semibold text-red uppercase">{{ nav.label }}</g-link>
+                    <g-link :to="nav.path" class="text-xs font-semibold uppercase">{{ nav.label }}</g-link>
                   </div>
                  </div>
                  </template>
@@ -60,11 +53,11 @@
             </g-link>
           </li>
           <li v-for="(nav, index) in navItems()" :key="nav.path" class="w-full py-2 text-center ">
-            <g-link class="font-semibold text-white uppercase robkraft" :to="nav.path">{{ nav.label }}</g-link>
+            <g-link class="font-semibold text-white uppercase redhover" :to="nav.path">{{ nav.label }}</g-link>
                
                <div v-for="(nav, index) in navSubItems(index)" :key="nav.path">
 
-                  <g-link :to="nav.path" class="text-sm font-semibold text-white uppercase robkraft">{{ nav.label }}</g-link>
+                  <g-link :to="nav.path" class="text-xs font-semibold text-white uppercase redhover">{{ nav.label }}</g-link>
 
                  </div>
            </li>
@@ -120,12 +113,7 @@ export default {
     tockifyScript.setAttribute('data-tockify-script', 'embed')
     document.head.appendChild(tockifyScript)
 
-    //let dialogScript = document.createElement('script')
-    //dialogScript.setAttribute('src', 'https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1')
-    //document.head.appendChild(dialogScript)
-    //const dfMessenger = document.querySelector('df-messenger');
-    //dfMessenger.showMinChat();
-    //this.open = this.isOpen
+    this.open = this.isOpen
   }
 }
 </script>

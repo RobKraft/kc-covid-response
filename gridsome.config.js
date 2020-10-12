@@ -113,15 +113,6 @@ module.exports = {
         enabled: process.env.GTM_ENABLED ? true : false,
         debug: false
       }
-    },
-    {
-      use: '@gridsome/vue-remark',
-      options: {
-        typeName: 'HasScript', // Required
-        baseDir: './content/hasscript', // Where .md files are located
-        //pathPrefix: '/tableau', // Add route prefix. Optional
-        template: './src/templates/HasScript.vue' // Optional
-      }
     }
   ],
   templates: {
