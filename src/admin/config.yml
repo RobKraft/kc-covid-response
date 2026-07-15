@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: RobKraft/kc-covid-response
+  repo: codeforkansascity/kc-covid-response
   branch: master
 
 media_folder: 'static/uploads'
@@ -130,10 +130,10 @@ collections:
     fields:
       - { label: 'Language', name: 'language', widget: 'hidden', default: 'en' }
       - { label: 'Order', name: 'order', widget: 'number', valueType: 'int' }
-      - { label: 'Itemname', name: 'itemname', widget: 'string' }
-      - { label: 'thumbnail', name: 'thumbnail', widget: 'string' }
-      - { label: 'itemtypes', name: 'itemtypes', widget: 'string' }
-      - { label: 'filename', name: 'filename', widget: 'string' }
+      - { label: 'Item Name', name: 'itemname', widget: 'string', required: true }
+      - { label: 'Item Types', name: 'itemtypes', widget: 'select', required: false, options: ["PDF", "PDF - 8.5 * 11", "PDF - 11 * 17", "Image", "Movie", "Zip File"] }
+      - { label: 'File', name: 'filename', widget: 'file', required: true }
+      - { label: 'Thumbnail Image', name: 'thumbnail', widget: 'file', required: false }
     sortableFields: ['order', 'itemname']
   - name: settings
     label: Settings
